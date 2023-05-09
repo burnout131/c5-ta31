@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <form name="calculadora" id="calculadora">
+            <p><input type="Text" name="pantalla" id="textoPantalla"></p>
+            <p>
+                <input class="largo" type="button" name="Retr" Value="Retr" Onclick="borrarDigito()">
+                <input class="largo" type="button" name="Ce" Value="CE" Onclick="borrarTodo()">
+                <input class="largo" type="button" name="C" Value="C" Onclick="borrarPantalla()">
+            </p>
+            <p>
+                <input type="button" name="7" Value="7" Onclick="insertaNumero(7)">
+                <input type="button" name="8" Value="8" Onclick="insertaNumero(8)">
+                <input type="button" name="9" Value="9" Onclick="insertaNumero(9)">
+                <input type="button" name="/" Value="/" Onclick="insertaOperador('/')">
+                <input type="button" name="Raíz" Value="&radic;" Onclick="insertaNumero(7)('sqrt')">
+            </p>
+            <p>
+                <input type="button" name="4" Value="4" Onclick="insertaNumero(4)">
+                <input type="button" name="5" Value="5" Onclick="insertaNumero(5)">
+                <input type="button" name="6" Value="6" Onclick="insertaNumero(6)">
+                <input type="button" name="*" Value="*" Onclick="insertaOperador('*')">
+                <input type="button" name="%" Value="%" Onclick="insertaOperador('%')">
+            </p>
+            <p>
+                <input type="button" name="1" Value="1" Onclick="insertaNumero(1)">
+                <input type="button" name="2" Value="2" Onclick="insertaNumero(2)">
+                <input type="button" name="3" Value="3" Onclick="insertaNumero(3)">
+                <input type="button" name="-" Value="-" Onclick="insertaOperador('-')">
+                <input type="button" name="1/x" Value="1/x" Onclick="insertaOperador('1/x')">
+            </p>
+            <p>
+                <input type="button" name="0" Value="0" Onclick="insertaNumero(0)">
+                <input type="button" name="+/-" Value="+/-" Onclick="cambiaSigno()">
+                <input type="button" name="." Value="." Onclick="insertaDecimal()">
+                <input type="button" name="+" Value="+" Onclick="insertaOperador('+')">
+                <input type="button" name="=" Value="=" Onclick="calcular()">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
